@@ -1,13 +1,9 @@
-@import "../../_sass/minima";
-$theme-font-path: "https://ts0.hfdstatic.com/sites/higux/dist/fonts";
-$icon-font-path: 'https://ts0.hfdstatic.com/sites/higux/dist/fonts';
-$icon-sprite-path: 'https://ts0.hfdstatic.com/sites/higux/dist/images/';
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 
-@import "../../node_modules/hig-ui-kit/app/scss/partials/variables";
-@import "../../node_modules/hig-ui-kit/app/scss/partials/fonts";
-@import "../../node_modules/hig-ui-kit/app/scss/partials/typography";
-
-
+@import "minima";
+@import "huk";
 
 .site-header {
   min-height: 65px;

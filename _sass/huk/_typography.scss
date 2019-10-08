@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: $blue;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  &.green {
+    color: $green;
+  }
+  &.underlined {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid $blue;
+  }
+}
+
+h2 {
+  &.green.underlined {
+    border-bottom: 2px solid $green;
+  }
+}
+
+p {
+  font-family: $font-family-paragraph;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  & > a {
+    font-weight: 700;
+    color: $blue-link;
+    text-decoration: underline;
+
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+ul {
+  li {
+    line-height: 1.5em;
+  }
+}
+
+a {
+  font-weight: 500;
+  color: $blue-link;
+
+  &:hover {
+    color: $blue-active;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #66019A;
+    text-decoration: none;
+  }
+}
+
+small {
+  color: $gray-medium;
+  line-height: 1.25em;
+}
+sup {
+  font-family: $font-family-sup;
+}
