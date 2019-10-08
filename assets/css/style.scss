@@ -1,5 +1,68 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
+@import "../../_sass/minima";
+$theme-font-path: "https://ts0.hfdstatic.com/sites/higux/dist/fonts";
+$icon-font-path: 'https://ts0.hfdstatic.com/sites/higux/dist/fonts';
+$icon-sprite-path: 'https://ts0.hfdstatic.com/sites/higux/dist/images/';
 
-@import "minima";
+@import "../../node_modules/hig-ui-kit/app/scss/partials/variables";
+@import "../../node_modules/hig-ui-kit/app/scss/partials/fonts";
+@import "../../node_modules/hig-ui-kit/app/scss/partials/typography";
+
+
+
+.site-header {
+  min-height: 65px;
+  margin-bottom: 1em;
+  
+  .wrapper {
+    .logo {
+      width: 46px;
+      height: auto;
+      margin-top: 2px;
+      float: left;
+    }
+  }
+
+  aside {
+    width: 160px;
+    position: absolute;
+    top: 65px;
+    left: -230px;
+
+    ul {
+      position: fixed;
+      list-style: none;
+      line-height: 1.2em;
+
+      a {
+        width: 150px;
+        display: block;
+        border: 1px solid $gray-light;
+        font-weight: 500;
+        background-color: $white;
+        color: $blue;
+        padding: .7em 1em;
+        text-decoration: none;
+        margin-bottom: .8em;
+        font-family: $font-family-base;
+        font-size: .9em;
+
+        &:hover {
+          background-color: $blue-active;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $on-medium) {
+  nav.site-nav {
+    input ~ .trigger {
+      display: none;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, p  {
+  font-family: $font-family-base;
+}
