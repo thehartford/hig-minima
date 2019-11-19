@@ -1,0 +1,26 @@
+{
+  "name": "minima",
+  "version": "1.0.0",
+  "description": "*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w _sass/ -o assets/css/ --include-path node_modules/ --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehartford/minima.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thehartford/minima/issues"
+  },
+  "homepage": "https://github.com/thehartford/minima#readme",
+  "dependencies": {
+    "hig-ui-kit": "git+ssh://git@github.thehartford.com/HIS/mce_hig_ux_kit#v3.3.29"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
