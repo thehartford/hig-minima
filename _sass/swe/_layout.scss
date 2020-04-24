@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+.swe-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.swe-site-header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+#swe-logo {
+  height: 100%;
+  width: auto;
+}
+
+.swe-header-start {
+  flex-basis: 15%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: .8em;
+}
+
+#swe-header-start-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.swe-header-end {
+  flex-basis: 85%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .8em;
+}
+
+#swe-header-end-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.swe-icon-table {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.swe-icon-table-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .8em;
+
+  a {
+
+    i {
+      font-size: 1.5em;
+    }
+  }
+}
+
+#swe-git-hub-search-form {
+  padding-top: .8em;
+}
+
+#swe-git-hub-search {
+  padding-left: .8em;
+  border-radius: 25px;
+  border: 1px solid $gray-light;
+  font-size: large;
+  background-color: white;
+  cursor: pointer;
+}
+
+#swe-git-hub-search:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px $gray-light;
+  -moz-box-shadow: 0px 0px 5px 0px $gray-light;
+  box-shadow: 0px 0px 5px 0px $gray-light;
+}
+
+#swe-git-hub-search:focus {
+  -webkit-box-shadow: 0px 0px 5px 0px $gray-light;
+  -moz-box-shadow: 0px 0px 5px 0px $gray-light;
+  box-shadow: 0px 0px 5px 0px $gray-light;
+  outline: none;
+}
+
+#swe-git-hub-search-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $gray-dark;
+  background-color: $gray-light;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#swe-git-hub-search-btn:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px $gray-light;
+  -moz-box-shadow: 0px 0px 5px 0px $gray-light;
+  box-shadow: 0px 0px 5px 0px $gray-light;
+}
+
+.swe-main-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.swe-left-wrapper {
+  flex-basis: 15%;
+  padding: .8em;
+}
+
+.swe-right-wrapper {
+  flex-basis: 85%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+
+  ul {
+    width: 90%;
+    list-style: none;
+    line-height: 1.2em;
+    margin: 0;
+
+    li {
+      margin: 0 0 .8em 0;
+
+      a {
+        width: 100%;
+        display: block;
+        border: 1px solid $gray-light;
+        font-weight: 500;
+        background-color: $white;
+        color: $blue;
+        text-decoration: none;
+        font-family: $font-family-base;
+        font-size: .9em;
+        padding: .4em;
+        overflow-wrap: break-word;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: $blue-active;
+          color: $white;
+        }
+      }
+    }
+  }
+}
