@@ -7,3 +7,4 @@ node_modules
 package-lock.json
 # Ignoring the compiled css - local compilation for testing only
 /assets/css/minima.css
+.idea
