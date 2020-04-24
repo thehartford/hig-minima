@@ -125,12 +125,17 @@
 .swe-left-wrapper {
   flex-basis: 15%;
   padding: .8em;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .swe-right-wrapper {
   flex-basis: 85%;
   padding-left: 30px;
   padding-right: 30px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow-x: hidden;
 }
 
 aside {
